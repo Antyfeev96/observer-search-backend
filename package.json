@@ -1,0 +1,28 @@
+{
+  "homepage": "https://github.com/Antyfeev96/observer-search-backend#readme",
+  "name": "observer-search-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prestart": "npm install",
+    "start" : "forever server.js",
+    "watch" : "forever -w server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Antyfeev96/observer-search-backend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Antyfeev96/observer-search-backend/issues"
+  },
+  "dependencies": {
+    "forever": "^4.0.1",
+    "koa": "^2.13.1",
+    "koa-body": "^4.2.0",
+    "koa-router": "^10.0.0",
+    "koa2-cors": "^2.0.6"
+  }
+}
