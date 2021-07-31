@@ -30,11 +30,10 @@ router.get('/api/search', async (ctx, next) => {
 
     return new Promise((resolve, reject) => {
         setTimeout(() => {
-
             const response = skills.filter(o => o.name.toLowerCase().startsWith(q.toLowerCase()))
             ctx.response.body = response;
             resolve();
-        }, isEven ? 1 * 1000 : 5 * 1000);
+        }, isEven ? 1000 : 5 * 1000);
         isEven = !isEven;
     });
 });
